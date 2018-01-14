@@ -752,10 +752,37 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZI2-B5-JJX">
+                                <rect key="frame" x="20" y="341" width="306" height="117"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="69G-gx-coC">
+                                        <rect key="frame" x="-2" y="0.0" width="310" height="117"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="6:00" id="mQh-Zj-axp">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GCe-tb-BVj">
+                                <rect key="frame" x="149" y="187" width="48" height="128"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="stopped" id="c19-bT-QK9"/>
+                            </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="ZI2-B5-JJX" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="188-VG-wzi"/>
                             <constraint firstItem="Z2C-RK-Yi8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="7gO-Ee-WPh"/>
                             <constraint firstItem="Z2C-RK-Yi8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="418" id="FF3-Kw-OMS"/>
+                            <constraint firstItem="GCe-tb-BVj" firstAttribute="top" secondItem="ZI2-B5-JJX" secondAttribute="bottom" constant="20" id="QKp-I1-5YJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZI2-B5-JJX" secondAttribute="trailing" constant="20" id="TRP-o6-t1y"/>
+                            <constraint firstItem="ZI2-B5-JJX" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="VcC-cB-O17"/>
                             <constraint firstAttribute="bottom" secondItem="Z2C-RK-Yi8" secondAttribute="bottom" id="lBj-mZ-6Hk"/>
                             <constraint firstAttribute="trailing" secondItem="Z2C-RK-Yi8" secondAttribute="trailing" id="x7N-lV-Ith"/>
                         </constraints>
@@ -763,7 +790,10 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="842.5"/>
+            <point key="canvasLocation" x="74" y="842"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>
